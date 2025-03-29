@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #021526;
+    padding: 10px 10px 0px 10px;
+}
+
+.navbarContainer {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarTitle {
+    color: #0590d5;
+}
+
+.icon {
+    color: whitesmoke;
+    background-color: rgba(46, 46, 46, 0.76);
+    padding: 10px 22.5px;
+    border-radius: 2.5px;
+    font-size: 1.5rem;
+}
+
+.sunIcon {
+    padding: 10px 30px;
+}
+
+.plusIconDiv {
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.sunIconDiv {
+    display: inline-block;
+}
+
+.title {
+    color: #0590d5;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.noProducts {
+    font-size: 1.5rem;
+    text-align: center;
+    color: gray;
+}
+
+.createProduct {
+    color: #0590d5;
+}
+
+.createInput {
+    border-radius: 7.5px;
+    color: white;
+    background-color: #001930e8;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #002f589d;
+}
+
+.form {
+    background-color: #001120;
+    padding: 20px 30px 20px 20px;
+    border-radius: 2.5px;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.addButton {
+    width: 100%;
+    background-color: #34bcff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #001120;
+    border: none;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #0146839d;
+}
+
+.createProduct {
+    text-align: center;
+}
+
+.cardsContainer {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.cardFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 33.333%;
+    padding: 15px;
+}
+
+.Product {
+    background-color: #00213d;
+    border-radius: 5px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cardText {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.productPrice {
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.Description {
+    padding: 10px;
+}
+
+.redact {
+    background-color: rgb(0, 110, 255);
+    padding: 5px;
+    border: 0px;
+    border-radius: 2.5px;
+    margin-right: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    border: 0px;
+    border-radius: 2.5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
