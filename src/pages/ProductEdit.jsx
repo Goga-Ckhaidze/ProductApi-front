@@ -2,7 +2,6 @@ import React, { use, useEffect, useState } from 'react'
 import { useProductStore } from '../store/product'
 import Alert from '../alert/Alert'
 import { Link, useParams } from 'react-router-dom';
-import { set } from 'mongoose';
 const  VITE_API_URL = import.meta.env.VITE_API_URL;
 
 function ProductEdit({ product }) {
