@@ -5,7 +5,6 @@ import Alert from '../alert/Alert'
 
 const ProductCard = ({product}) => {
 
-    const defaultImageUrl = 'https://th.bing.com/th/id/OIP.z9f1l0WKMQw9em8cXGO_zQHaH6?w=166&h=180&c=7&r=0&o=5&pid=1.7';
 
     const { deleteProduct} = useProductStore()
 
@@ -25,20 +24,7 @@ const ProductCard = ({product}) => {
         }, 3000);
     }
 
-    const validateAndReturnUrl = (url) => {
-        if (!url || !url.startsWith('http://') && !url.startsWith('https://')) {
-            return undefined;
-        }
-        return url;
-    };
-    
-    const isValidImageUrl = (url) => {
-        return (url && /.(jpeg|jpg|gif|png|bmp|webp)$/i.test(url));
-    };
-    
-    const imageSrc = isValidImageUrl(validateAndReturnUrl(product.image)) 
-        ? product.image 
-        : defaultImageUrl;
+
   return (
     <>
 
