@@ -7,7 +7,7 @@ export const useProductStore = create((set, get) => ({
         if (!newProduct.name || !newProduct.image || !newProduct.price) {
             return { success: false, message: "Please fill in all fields" }
         }
-        const res = await fetch ("http://localhost:5000/api/product", {
+        const res = await fetch ("https://productapi-back.onrender.com/api/product", {
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
