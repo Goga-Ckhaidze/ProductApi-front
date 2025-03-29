@@ -33,7 +33,7 @@ const ProductCard = ({product}) => {
     <div className='card'>
         <div className='Product'>
         <div className='imageDiv'>
-        <img src={imageSrc} alt={`Image of ${product.name}`} className='cardImage' />
+        <img src={product.name} alt="https://th.bing.com/th/id/OIP.z9f1l0WKMQw9em8cXGO_zQHaH6?w=166&h=180&c=7&r=0&o=5&pid=1.7" className='cardImage' />
         </div>
 
         <div className='Description'>
