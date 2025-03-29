@@ -109,6 +109,7 @@ input:focus {
 
 .card {
     min-width: 33.333%;
+    max-width: 33.333%;
     min-height: 750px;
     padding: 15px;
 }
@@ -116,6 +117,7 @@ input:focus {
 .Product {
     background-color: #00213d;
     border-radius: 5px;
+    height: 400px;
 }
 
 .cardImage {
