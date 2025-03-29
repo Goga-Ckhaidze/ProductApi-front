@@ -60,6 +60,10 @@ body {
     color: #0590d5;
 }
 
+.imageDiv {
+    height: 400px;
+}
+
 .createInput {
     border-radius: 7.5px;
     color: white;
@@ -110,7 +114,6 @@ input:focus {
 .card {
     min-width: 33.333%;
     max-width: 33.333%;
-    min-height: 750px;
     padding: 15px;
     background-color: #00213d;
 }
@@ -118,7 +121,7 @@ input:focus {
 .Product {
     background-color: #00213d;
     border-radius: 5px;
-    height: 400px;
+    padding: 15px;
 }
 
 .cardImage {
