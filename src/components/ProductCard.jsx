@@ -25,12 +25,20 @@ const ProductCard = ({product}) => {
         }, 3000);
     }
 
-    const isValidImageUrl = (url) => {
-        return (url && /\.(jpeg|jpg|gif|png|bmp|webp)$/i.test(url));
+    const validateAndReturnUrl = (url) => {
+        if (!url || !url.startsWith('http://'/) && !url.startsWith('https://')/) {
+            return undefined;
+        }
+        return url;
     };
-
-    const imageSrc = isValidImageUrl(product.image) ? product.image : defaultImageUrl;
-
+    
+    const isValidImageUrl = (url) => {
+        return (url && /.(jpeg|jpg|gif|png|bmp|webp)$/i.test(url));
+    };
+    
+    const imageSrc = isValidImageUrl(validateAndReturnUrl(product.image)) 
+        ? product.image 
+        : defaultImageUrl;
   return (
     <>
 
