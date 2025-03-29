@@ -26,11 +26,10 @@ const ProductCard = ({product}) => {
     }
 
     const isValidImageUrl = (url) => {
-        return (url && (url.match(/\.(jpeg|jpg|gif|png)$/) != null));
+        return (url && /\.(jpeg|jpg|gif|png|bmp|webp)$/i.test(url));
     };
 
     const imageSrc = isValidImageUrl(product.image) ? product.image : defaultImageUrl;
-
 
   return (
     <>
