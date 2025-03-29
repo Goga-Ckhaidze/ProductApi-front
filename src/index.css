@@ -112,6 +112,7 @@ input:focus {
     max-width: 33.333%;
     min-height: 750px;
     padding: 15px;
+    background-color: #00213d;
 }
 
 .Product {
