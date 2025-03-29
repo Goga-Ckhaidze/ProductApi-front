@@ -5,6 +5,8 @@ import Alert from '../alert/Alert'
 
 const ProductCard = ({product}) => {
 
+    const defaultImageUrl = 'https://th.bing.com/th/id/OIP.z9f1l0WKMQw9em8cXGO_zQHaH6?w=166&h=180&c=7&r=0&o=5&pid=1.7';
+
     const { deleteProduct} = useProductStore()
 
       const [alert, setAlert] = useState(null);
@@ -23,6 +25,13 @@ const ProductCard = ({product}) => {
         }, 3000);
     }
 
+    const isValidImageUrl = (url) => {
+        return (url && (url.match(/\.(jpeg|jpg|gif|png)$/) != null));
+    };
+
+    const imageSrc = isValidImageUrl(product.image) ? product.image : defaultImageUrl;
+
+
   return (
     <>
 
@@ -31,7 +40,7 @@ const ProductCard = ({product}) => {
     <div className='card'>
         <div className='Product'>
         <div className='imageDiv'>
-        <img src={product.image} alt={`Image of ${product.name}`} className='cardImage'/>
+        <img src={imageSrc} alt={`Image of ${product.name}`} className='cardImage' />
         </div>
 
         <div className='Description'>
