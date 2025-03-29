@@ -123,6 +123,7 @@ input:focus {
     height: 400px;
     object-fit: cover;
     color: white;
+    background-color: #00213d;
 }
 
 .cardText {
