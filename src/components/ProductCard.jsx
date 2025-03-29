@@ -26,7 +26,7 @@ const ProductCard = ({product}) => {
     }
 
     const validateAndReturnUrl = (url) => {
-        if (!url || !url.startsWith('http://'/) && !url.startsWith('https://')/) {
+        if (!url || !url.startsWith('http://') && !url.startsWith('https://')) {
             return undefined;
         }
         return url;
