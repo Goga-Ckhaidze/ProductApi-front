@@ -128,7 +128,7 @@ input:focus {
     object-fit: cover;
     color: white;
     background-color: #00213d;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .cardText {
