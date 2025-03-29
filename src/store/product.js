@@ -19,12 +19,12 @@ export const useProductStore = create((set, get) => ({
         return { success: true, message: "Product created succesfully" }
     },
     fetchProducts: async() => {
-        const res = await fetch('/api/products');
+        const res = await fetch('https://product-api-front.vercel.app/create/api/products');
         const data = await res.json();
         set({ products: data.data })
     },
     deleteProduct: async (id) => {
-        const res = await fetch(`/api/product/${id}`, {
+        const res = await fetch(`https://product-api-front.vercel.app/create/api/product/${id}`, {
             method: "DELETE",
         });
         const data = await res.json();
@@ -35,7 +35,7 @@ export const useProductStore = create((set, get) => ({
     },
     updateProduct: async (id, updateProduct) => {
 
-        const res = await fetch(`/api/product/${id}`, {
+        const res = await fetch(`https://product-api-front.vercel.app/create/api/product/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
